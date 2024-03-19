@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Weather</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1 class="center">Travel Weather</h1>
-
-    <div class="container center">
-      <div class="center"><h1>New York</h1></div>
-      <div class="col-sm">
-        <div class="col-sm center"><h1>LA</h1></div>
-        <div class="col-sm center" id="columbus"><h1>Miami</h1></div>
-        <div class="col-sm center" id="Miami"><h1>Denver</h1></div>
-      </div>
-    </div>
-
-    <div class="container center">
-      <div class="center"><h1>New York</h1></div>
-      <div class="row">
-        <div class="col-sm center"><h1>LA</h1></div>
-        <div class="col-sm center" id="columbus"><h1>Miami</h1></div>
-        <div class="col-sm center" id="Miami"><h1>Denver</h1></div>
-      </div>
-    </div>
-
-    <script src="scripts.js"></script>
-
-    <script>
-      src = "https://cdnjs.cloudflare.com/ajax/libs/fetch/3.6.20/fetch.min.js";
-      integrity =
-        "sha512-5vzl35V/cPSXliPbZtxHY0Q6cfYFd2Qld79+d7wLPbOxnKeCHH/LmlMD8aYl0ZN5VZPFM2FnKiAjoNJ2k3vrEg==";
-      crossorigin = "anonymous";
-      referrerpolicy = "no-referrer";
-    </script>
-    <script>
-      src =
-        "https://cdnjs.cloudflare.com/ajax/libs/open-weather/2.0.0/openweather.min.js";
-      integrity =
-        "sha512-mlRoH3bU+q4t5clJkMwltJcka6JyNWsUJybBclHUiU0Bdux6LtcNqO8XMNi9/vp4+KCteAbc0hYnHU4Rh2SH+g==";
-      crossorigin = "anonymous";
-      referrerpolicy = "no-referrer";
-    </script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container row center">
+        <!-- Content here -->
+        <h1>Weather Dashboard</h1>
+      
+      
+      <div class="container">
+        <div class="row border">
+          <div class="col-lg center border" >
+           
+            <h1>Search for a City:</h1>
+           
+            <input type="lat" class="form-control" id="lat" placeholder="latitude">
+            <input type="ki" class="form-control" id="lon" placeholder="longitude ">
+            <button id="Submit" type="button" class="btn btn-danger">Submit</button>
+          </div>
+          <div class="col-sm center border">
+            <h1>Weather</h1>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <!--This is where the information goes-->
+                  <input type="email" class="form-control" id="temp" aria-describedby="emailHelp" placeholder="temp">
+                  <input type="email" class="form-control" id="humidity" aria-describedby="emailHelp" placeholder="humidity">
+              </form>
+            <h3 id="weatherInput"></h3>
+            <div class="form-group" id="api">
+    
+  </div>
+          </div>
+          </div>
+        </div>
+        <script src="scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/open-weather/2.0.0/openweather.min.js" integrity="sha512-mlRoH3bU+q4t5clJkMwltJcka6JyNWsUJybBclHUiU0Bdux6LtcNqO8XMNi9/vp4+KCteAbc0hYnHU4Rh2SH+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
 </html>
